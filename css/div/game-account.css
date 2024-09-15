@@ -1,0 +1,74 @@
+#game-accounts-nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add some space between the nav and the content */
+    margin-bottom: 20px;
+  }
+  
+  #game-accounts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Make the list items display inline-block for a horizontal layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #game-accounts-list li {
+    margin-bottom: 10px;
+    /* Add some padding to the list items for better spacing */
+    padding: 10px;
+    /* Make the list items take up equal space */
+    flex-basis: 45%;
+    /* Add some border radius to the list items */
+    border-radius: 10px;
+    /* Add a box shadow to the list items for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #game-accounts-list a {
+    text-decoration: none;
+    color: #337ab7;
+    /* Add some transition effect to the link color */
+    transition: color 0.2s ease;
+  }
+  
+  #game-accounts-list a:hover {
+    color: #23527c;
+  }
+  
+  #game-accounts-list span.account-name {
+    font-weight: bold;
+    font-size: 16px;
+    /* Add some margin to the account name */
+    margin-right: 10px;
+  }
+  
+  #game-accounts-list span.account-id {
+    font-size: 14px;
+    color: #666;
+    /* Add some margin to the account ID */
+    margin-left: 10px;
+  }
+  
+  /* Add some media queries for responsiveness */
+  @media (max-width: 768px) {
+    #game-accounts-list li {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #game-accounts-list li {
+      padding: 5px;
+    }
+    #game-accounts-list span.account-name {
+      font-size: 14px;
+    }
+    #game-accounts-list span.account-id {
+      font-size: 12px;
+    }
+  }
